@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rana Ibtesaam — DevOps Engineer</title>
+<meta name="description" content="Rana Ibtesaam — Junior DevOps Engineer specializing in CI/CD automation, Kubernetes, cloud infrastructure and Infrastructure as Code." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d1424'/%3E%3Ctext x='50' y='66' font-size='46' font-family='monospace' font-weight='bold' fill='%2322d3ee' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<canvas id="particles"></canvas>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">RI<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <a href="assets/resume.html" class="btn btn-ghost nav-resume" target="_blank" rel="noopener">Resume</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="hero-text reveal">
+      <p class="eyebrow">// welcome to my portfolio</p>
+      <h1>Hi, I'm <span class="grad-text">Rana Ibtesaam</span></h1>
+      <h2 class="typing-line">I'm a <span id="typed" class="grad-text"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">
+        I build reliable CI/CD pipelines, automate cloud infrastructure, and turn manual
+        deployments into fast, repeatable systems — so teams can ship with confidence.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/rana-ibtesaam" target="_blank" rel="noopener" aria-label="GitHub"><i class="devicon-github-original"></i></a>
+        <a href="https://linkedin.com/in/rana-ibtesaam" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="devicon-linkedin-plain"></i></a>
+        <a href="mailto:rana.ibtesaam@example.com" aria-label="Email">✉</a>
+      </div>
+    </div>
+
+    <div class="hero-terminal reveal">
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">rana@devops:~</span>
+        </div>
+        <div class="terminal-body" id="terminalBody"></div>
+      </div>
+      <div class="floating-badge badge-1">🐳 Docker</div>
+      <div class="floating-badge badge-2">☸ Kubernetes</div>
+      <div class="floating-badge badge-3">☁ AWS</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- TECH MARQUEE -->
+<section class="marquee-section">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span><i class="devicon-docker-plain colored"></i> Docker</span>
+      <span><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span>
+      <span><i class="devicon-amazonwebservices-original colored"></i> AWS</span>
+      <span><i class="devicon-azure-plain colored"></i> Azure</span>
+      <span><i class="devicon-googlecloud-plain colored"></i> GCP</span>
+      <span><i class="devicon-jenkins-line colored"></i> Jenkins</span>
+      <span><i class="devicon-terraform-plain colored"></i> Terraform</span>
+      <span><i class="devicon-ansible-plain colored"></i> Ansible</span>
+      <span><i class="devicon-linux-plain colored"></i> Linux</span>
+      <span><i class="devicon-git-plain colored"></i> Git</span>
+      <span><i class="devicon-python-plain colored"></i> Python</span>
+      <span><i class="devicon-bash-plain colored"></i> Bash</span>
+      <!-- duplicate for seamless loop -->
+      <span><i class="devicon-docker-plain colored"></i> Docker</span>
+      <span><i class="devicon-kubernetes-plain colored"></i> Kubernetes</span>
+      <span><i class="devicon-amazonwebservices-original colored"></i> AWS</span>
+      <span><i class="devicon-azure-plain colored"></i> Azure</span>
+      <span><i class="devicon-googlecloud-plain colored"></i> GCP</span>
+      <span><i class="devicon-jenkins-line colored"></i> Jenkins</span>
+      <span><i class="devicon-terraform-plain colored"></i> Terraform</span>
+      <span><i class="devicon-ansible-plain colored"></i> Ansible</span>
+      <span><i class="devicon-linux-plain colored"></i> Linux</span>
+      <span><i class="devicon-git-plain colored"></i> Git</span>
+      <span><i class="devicon-python-plain colored"></i> Python</span>
+      <span><i class="devicon-bash-plain colored"></i> Bash</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="section-tag reveal">01 · About Me</p>
+    <h2 class="section-title reveal">Who I Am</h2>
+
+    <div class="about-grid">
+      <div class="about-avatar reveal">
+        <div class="avatar-ring">
+          <div class="avatar-circle">RI</div>
+        </div>
+        <div class="status-chip">🟢 Open to Work</div>
+      </div>
+
+      <div class="about-content reveal">
+        <p>
+          I'm a <strong>Junior DevOps Engineer</strong> with hands-on experience designing CI/CD
+          pipelines, containerizing applications, and managing cloud infrastructure across
+          <strong>AWS, Azure, and GCP</strong>. I enjoy turning slow, manual, error-prone release
+          processes into fast, repeatable, and observable systems.
+        </p>
+        <p>
+          Currently deepening my expertise in Kubernetes and Infrastructure as Code while
+          contributing to real automation projects — with a long-term goal of growing into a
+          Site Reliability Engineer role.
+        </p>
+
+        <div class="facts-grid">
+          <div class="fact-item">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Pakistan · Remote friendly</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Experience</span>
+            <span class="fact-value">1–2 Years</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Education</span>
+            <span class="fact-value">BS Computer Science</span>
+          </div>
+          <div class="fact-item">
+            <span class="fact-label">Availability</span>
+            <span class="fact-value">Junior DevOps / Cloud Roles</span>
+          </div>
+        </div>
+
+        <a href="assets/resume.html" class="btn btn-primary" target="_blank" rel="noopener">Download Resume ↓</a>
+      </div>
+    </div>
+
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <span class="stat-num" data-target="1" data-suffix="+">0</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="4" data-suffix="+">0</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="15" data-suffix="+">0</span>
+        <span class="stat-label">Tools &amp; Technologies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-num" data-target="100" data-suffix="%">0</span>
+        <span class="stat-label">Automation Driven</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <p class="section-tag reveal">02 · Skills</p>
+    <h2 class="section-title reveal">Technical Toolbox</h2>
+    <p class="section-sub reveal">The tools and platforms I use to build, ship, and monitor infrastructure.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-amazonwebservices-original colored"></i><h3>Cloud Platforms</h3></div>
+        <ul class="skill-list">
+          <li>AWS <div class="bar"><span style="width:80%"></span></div></li>
+          <li>Azure <div class="bar"><span style="width:65%"></span></div></li>
+          <li>Google Cloud <div class="bar"><span style="width:60%"></span></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-docker-plain colored"></i><h3>Containers &amp; Orchestration</h3></div>
+        <ul class="skill-list">
+          <li>Docker <div class="bar"><span style="width:85%"></span></div></li>
+          <li>Kubernetes <div class="bar"><span style="width:75%"></span></div></li>
+          <li>Helm <div class="bar"><span style="width:60%"></span></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-jenkins-line colored"></i><h3>CI/CD &amp; Automation</h3></div>
+        <ul class="skill-list">
+          <li>Jenkins <div class="bar"><span style="width:80%"></span></div></li>
+          <li>GitHub Actions <div class="bar"><span style="width:85%"></span></div></li>
+          <li>GitLab CI <div class="bar"><span style="width:70%"></span></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-terraform-plain colored"></i><h3>Infrastructure as Code</h3></div>
+        <ul class="skill-list">
+          <li>Terraform <div class="bar"><span style="width:78%"></span></div></li>
+          <li>Ansible <div class="bar"><span style="width:70%"></span></div></li>
+          <li>CloudFormation <div class="bar"><span style="width:55%"></span></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-grafana-plain colored"></i><h3>Monitoring &amp; Observability</h3></div>
+        <ul class="skill-list">
+          <li>Prometheus <div class="bar"><span style="width:72%"></span></div></li>
+          <li>Grafana <div class="bar"><span style="width:75%"></span></div></li>
+          <li>ELK Stack <div class="bar"><span style="width:55%"></span></div></li>
+        </ul>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-head"><i class="devicon-linux-plain colored"></i><h3>Scripting &amp; OS</h3></div>
+        <ul class="skill-list">
+          <li>Linux <div class="bar"><span style="width:85%"></span></div></li>
+          <li>Bash <div class="bar"><span style="width:80%"></span></div></li>
+          <li>Python <div class="bar"><span style="width:70%"></span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="section-tag reveal">03 · Projects</p>
+    <h2 class="section-title reveal">Featured Work</h2>
+    <p class="section-sub reveal">A few projects that show how I approach automation and infrastructure.</p>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-icon">⚙️</div>
+        <h3>Automated CI/CD Pipeline for Microservices</h3>
+        <p>Built an end-to-end pipeline with Jenkins and GitHub Actions to automate build, test,
+          and deployment of a microservices app to Kubernetes — cutting release time from hours to minutes.</p>
+        <div class="tags">
+          <span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>GitHub Actions</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rana-ibtesaam/cicd-microservices" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">🌐</div>
+        <h3>Multi-Cloud Infrastructure with Terraform</h3>
+        <p>Designed and provisioned infrastructure across AWS and Azure using reusable Terraform
+          modules, with remote state management and environment-based workspaces for dev, staging and prod.</p>
+        <div class="tags">
+          <span>Terraform</span><span>AWS</span><span>Azure</span><span>IaC</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rana-ibtesaam/multicloud-terraform" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">📊</div>
+        <h3>Automated Monitoring &amp; Alerting Stack</h3>
+        <p>Deployed Prometheus and Grafana for real-time infrastructure monitoring, configured
+          Alertmanager for Slack notifications, and used Ansible to automate agent rollout across servers.</p>
+        <div class="tags">
+          <span>Prometheus</span><span>Grafana</span><span>Ansible</span><span>Alertmanager</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rana-ibtesaam/monitoring-stack" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon">📦</div>
+        <h3>Dockerized Web App on AWS ECS</h3>
+        <p>Containerized a full-stack web application with Docker, automated the build pipeline
+          with GitHub Actions, and deployed to AWS ECS Fargate with zero-downtime rolling updates.</p>
+        <div class="tags">
+          <span>Docker</span><span>AWS ECS</span><span>GitHub Actions</span><span>Nginx</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rana-ibtesaam/ecs-docker-deploy" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <p class="section-tag reveal">04 · Experience</p>
+    <h2 class="section-title reveal">Career Timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jan 2024 — Present</span>
+          <h3>Junior DevOps Engineer</h3>
+          <span class="timeline-org">[Company Name]</span>
+          <ul>
+            <li>Automated deployment pipelines, reducing release time by 60%</li>
+            <li>Managed containerized workloads on Kubernetes clusters</li>
+            <li>Implemented Infrastructure as Code with Terraform for multi-environment provisioning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jun 2023 — Dec 2023</span>
+          <h3>DevOps Intern</h3>
+          <span class="timeline-org">[Company Name]</span>
+          <ul>
+            <li>Assisted in migrating on-prem services to AWS cloud infrastructure</li>
+            <li>Wrote Bash/Python scripts to automate routine sysadmin tasks</li>
+            <li>Set up monitoring dashboards with Grafana</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 — 2023</span>
+          <h3>BS in Computer Science</h3>
+          <span class="timeline-org">[University Name]</span>
+          <ul>
+            <li>Focused on systems, networking, and cloud computing fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" id="certifications">
+  <div class="container">
+    <p class="section-tag reveal">05 · Certifications</p>
+    <h2 class="section-title reveal">Certifications &amp; Learning Path</h2>
+    <p class="section-sub reveal">Actively working toward industry-recognized DevOps and cloud certifications.</p>
+
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <i class="devicon-amazonwebservices-original colored"></i>
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <span class="cert-status in-progress">In Progress</span>
+      </div>
+      <div class="cert-card reveal">
+        <i class="devicon-docker-plain colored"></i>
+        <h3>Docker Certified Associate</h3>
+        <span class="cert-status planned">Planned</span>
+      </div>
+      <div class="cert-card reveal">
+        <i class="devicon-kubernetes-plain colored"></i>
+        <h3>Certified Kubernetes Administrator (CKA)</h3>
+        <span class="cert-status planned">Planned</span>
+      </div>
+      <div class="cert-card reveal">
+        <i class="devicon-terraform-plain colored"></i>
+        <h3>HashiCorp Certified: Terraform Associate</h3>
+        <span class="cert-status planned">Planned</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="container">
+    <p class="section-tag reveal">06 · Contact</p>
+    <h2 class="section-title reveal">Let's Work Together</h2>
+    <p class="section-sub reveal">Open to Junior DevOps / Cloud Engineer opportunities. Feel free to reach out.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <span class="contact-icon">✉</span>
+          <div><span class="contact-label">Email</span><a href="mailto:rana.ibtesaam@example.com">rana.ibtesaam@example.com</a></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <div><span class="contact-label">Phone</span><a href="tel:+920000000000">+92 3XX XXXXXXX</a></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="devicon-github-original"></i></span>
+          <div><span class="contact-label">GitHub</span><a href="https://github.com/rana-ibtesaam" target="_blank" rel="noopener">github.com/rana-ibtesaam</a></div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon"><i class="devicon-linkedin-plain colored"></i></span>
+          <div><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/rana-ibtesaam" target="_blank" rel="noopener">linkedin.com/in/rana-ibtesaam</a></div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden-field"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name" />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a href="#home" class="logo">RI<span class="dot">.</span></a>
+    <p>&copy; <span id="year"></span> Rana Ibtesaam. Built with ❤ and deployed on Netlify.</p>
+    <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

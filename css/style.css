@@ -687,7 +687,8 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; letter-spacing
 @media (max-width: 720px) {
   .nav-links {
     position: fixed;
-    top: 68px; left: 0; right: 0; bottom: 0;
+    top: 68px; left: 0; right: 0;
+    height: calc(100vh - 68px);
     flex-direction: column;
     background: var(--bg);
     padding: 24px;

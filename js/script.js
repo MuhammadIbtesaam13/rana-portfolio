@@ -78,7 +78,7 @@ typeLoop();
 
 /* ---------- Terminal typing animation ---------- */
 const terminalLines = [
-  { prompt: '$ whoami', out: 'rana-ibtesaam' },
+  { prompt: '$ whoami', out: 'muhammad-ibtesaam' },
   { prompt: '$ cat role.txt', out: 'Junior DevOps Engineer' },
   { prompt: '$ docker ps --status=running', out: '3 containers healthy ✓' },
   { prompt: '$ kubectl get pods', out: 'All pods Running ✓' },

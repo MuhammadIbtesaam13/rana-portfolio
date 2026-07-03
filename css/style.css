@@ -171,12 +171,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 600; letter-spacing
   transform: rotate(-6deg) scale(1.06);
   box-shadow: 0 8px 22px rgba(34, 211, 238, 0.5);
 }
-.logo-text { white-space: nowrap; }
 .logo .dot { color: var(--primary); }
-
-@media (max-width: 480px) {
-  .logo-text { display: none; }
-}
 
 .nav-links {
   display: flex;
